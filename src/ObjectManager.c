@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <assert.h>
 
 typedef unsigned long Ref;
 typedef struct MEMBLOCK
@@ -16,14 +17,13 @@ typedef struct MEMBLOCK
 
 
 bool isInitiated = false;
-int activePool = 0;
-
+bool currentPool = false;
 
 void initPool()
 {
     if (!isInitiated)
     {
-        
+
     }
     else
     {
