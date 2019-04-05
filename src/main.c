@@ -5,7 +5,8 @@ int main(int argc, char *argv[])
 {
     char *ptr;
     int i;
-    int id1, id2, id3, id4;
+    int id1, id2, id3;
+    // int id4;
     initPool();
 
     id1 = insertObject(100);
@@ -18,7 +19,7 @@ int main(int argc, char *argv[])
     // addReference(id3);
     dropReference(id3);
     id3 = insertObject(10);
-    id4 = insertObject(520100);
+    // id4 = insertObject(520100);
 
     ptr = (char *)retrieveObject(id1);
     for (i = 0; i < 100; i++)
